@@ -1,0 +1,74 @@
+button{
+  width: 15%;
+  height: 80%;
+}
+
+#landing-ctn-1{
+  background-color: #1F49AF;
+  height: 100vh;
+}
+
+.ctn-navbar{
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.ctn-logo-nav{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name{
+  color: #1F49AF;
+  font-size: 1.3em;
+}
+
+.light-name{
+  font-weight: 500;
+}
+
+.burger-nav{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 35px;
+}
+
+.line{
+  background-color: #1F49AF;
+  width: 30px;
+  height: 2px;
+  display: inline-block;
+}
+
+.line-2{
+  margin-top: 7px;
+}
+
+.line-3{
+  margin-top: 7px;
+}
+
+.ctn-search-nav{
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.ctn-info-nav{
+  background-color: purple;
+  height: 100%;
+  width: 25%;
+}
+
+
