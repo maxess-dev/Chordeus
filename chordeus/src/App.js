@@ -1,12 +1,9 @@
 import React from 'react';
-import Navbar from './components/navbar.js'
-import './App.css';
+import Home from './components/homepage.js'
 
 function App() {
   return (
-    <div id = "landing-ctn-1">
-      <Navbar />
-    </div>
+      <Home />
   );
 }
 
