@@ -5,6 +5,7 @@
 
 .ctn-navbar{
   position: fixed;
+  z-index: 2000;
   display: flex;
   align-items: center;
   height: 75px;

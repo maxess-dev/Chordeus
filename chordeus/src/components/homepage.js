@@ -1,7 +1,9 @@
 import React from 'react';
-import Navbar from './navbar.js'
-import logo from '../img/chordette.png'
-import '../css/homepage.css'
+import Navbar from './navbar.js';
+import CardInstrument from './ctn-card-instruments.js';
+import imgLogo from '../img/chordette.png';
+import { ReactComponent as Wave } from '../svg/wave.svg';
+import '../css/homepage.css';
 
 function Home() {
     return (
@@ -17,17 +19,26 @@ function Home() {
                     </div>
                 </div>
                 <div className = "ctn-img">
-                    <img src={ logo } alt="Image of chordeus"/>
-                </div>  
+                    <img src={ imgLogo } alt="Girl with instruments"/>
+                </div>
+                <Wave className = "wave" />  
             </section>
             <section className = "ctn-layout-2">
- 
+                <div className="infostrument">
+                    <h2>Trouve l'instrument idéal</h2>
+                    <h3>parmi des centaines d'annonces</h3>
+                </div>
+                <div className = "ctn-card-instrument">
+                    <div className = "ctn-card-instrument-inner">
+                        <CardInstrument price="120,00 $" brand="Epiphone" state="Très bon état"/>
+                        <CardInstrument price="120,00 $" brand="Epiphone" state="Très bon état"/>
+                        <CardInstrument price="120,00 $" brand="Epiphone" state="Très bon état"/>
+                        <CardInstrument price="120,00 $" brand="Epiphone" state="Très bon état"/>
+                    </div>
+                </div>
             </section>
             <section className = "ctn-layout-3">
- 
-            </section>
-            <section className = "ctn-layout-4">
- 
+                <Wave className = "wave2" /> 
             </section>
         </main>
         

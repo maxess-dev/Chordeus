@@ -1,3 +1,7 @@
+svg{
+    width: 100%;
+}
+
 h1{
     font-size: 3.8em;
     color: white;
@@ -11,7 +15,10 @@ h1{
     line-height: 1.8em;
 }
 
+/* -- SECTION 1 -- */
+
 .ctn-layout-1{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,10 +34,8 @@ h1{
     width: 220px;
     border-radius: 4px;
     font-size: 1.3em;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 .cta-register > button:first-child{
@@ -48,8 +53,8 @@ h1{
 
 
 .cta-landing{
- margin-bottom: 100px;
- margin-left: 150px;
+    margin-bottom: 100px;
+    margin-left: 150px;
 }
 
 .ctn-img{
@@ -60,17 +65,73 @@ h1{
     align-items: center;
 }
 
-.ctn-layout-2{
-    background-color: blue;
-    height: 100vh;
+.wave{
+    position: absolute;
+    display: flex;
+    bottom: -1px;
+    width: 100%;
 }
+
+/* -- SECTION 2 -- */
+
+.ctn-layout-2{
+    background-color: #1b53db;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infostrument{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.infostrument h2{
+    font-size: 3em;
+}
+
+.infostrument h3{
+    font-size: 1.6em;
+    margin-top: -25px;
+    font-weight: 400;
+}
+
+.ctn-card-instrument{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.ctn-card-instrument-inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -- SECTION 3 -- */
 
 .ctn-layout-3{
-    background-color: green;
+    position: relative;
+    background-color: #1F49AF;
     height: 100vh;
 }
 
-.ctn-layout-4{
-    background-color: purple;
-    height: 100vh;
+.wave2{
+    background-color: transparent;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    transform: rotate(180deg);
 }
+
+
+
+
+

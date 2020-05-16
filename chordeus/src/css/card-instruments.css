@@ -1,0 +1,59 @@
+.card-instrument{
+    margin-left: 20px;
+    width: 220px;
+    height: 280px;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.img-instrument{
+    height: 55%;
+    width: 100%;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-instrument img{
+    width: 80%;
+    opacity: 0.8;
+}
+
+.price-instrument{
+    height: 15%;
+    width: 100%;
+    background-color: #144690;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-instrument{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color: #175D90;
+}
+
+.state-instrument{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color: #12CD09;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.font-brand-little{
+    font-weight: 400;
+}
