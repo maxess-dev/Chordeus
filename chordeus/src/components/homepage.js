@@ -41,8 +41,8 @@ function Home() {
             <section className = "ctn-layout-3">
                 <Wave className = "wave2" /> 
                 <div className = "card-info-service">
-                    <CardInfo title="Fiable" info="Notre politique de mise en vente impose aux vendeurs de publier une vidéo démontrant la qualité de leurs intruments." bgColor="#3B6EF8" color="#4267CC"/>
-                    <CardInfo title="Eco-Friendly" info="L’achat d’un produit d'occasion permet de réduire les pollutions liées à la création de nouveaux instruments." bgColor="#5CD856" color ="#56BF59"/>
+                    <CardInfo title="Fiable" info="Notre politique de mise en vente impose aux vendeurs de publier une vidéo démontrant la qualité de leurs intruments." bgColor="#3B6EF8" color="#4267CC" marginTop="34px"/>
+                    <CardInfo title="Eco-Friendly" info="L’achat d’un produit d'occasion permet de réduire les pollutions liées à la création de nouveaux instruments." bgColor="#5CD856" color ="#56BF59" marginTop ="34px"/>
                     <CardInfo title="Abordable" info="En tant qu’étudiant, nous nous engageons à rendre abordable au plus grand nombre la musique, grâce à des instruments qui s’accordent à votre budget." bgColor="#E66060" color="#E97B7B"/>
                 </div>        
             </section>
