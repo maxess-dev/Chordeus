@@ -24,11 +24,13 @@
 }
 
 .more{
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: white;
     color: #3B6EF8;
     border-radius: 4px;
-    width: 80%;
+    width: 70%;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
 }
 
 .more > .icon {
