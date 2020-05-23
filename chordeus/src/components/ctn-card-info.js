@@ -2,6 +2,9 @@ import React from 'react';
 import '../css/card-info.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import guitar from '../img/guitar.png';
+import drums from '../img/drums.png';
+import synth from '../img/synth.png';
 
 function CardInfo(props){
     const ctnCard = {
@@ -12,9 +15,10 @@ function CardInfo(props){
         marginTop: props.marginTop,
         color: props.color
     }
-    
+
     return (
         <div className="ctn-card-info" style={ctnCard}>
+            <img src={guitar} alt="Guitar" className="guitar"/>
             <div className="ctn-card-inner">
                 <span className="title-card-info">{props.title}</span>
                 <p className="para-card-info">{props.info}</p>

@@ -120,6 +120,7 @@ h1{
 .ctn-layout-3{
     background-color: #1F49AF;
     position: relative;
+    z-index: 1000;
     min-height: 100vh;
     display: flex;
     justify-content: space-around;
