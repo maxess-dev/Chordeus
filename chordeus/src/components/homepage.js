@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar.js';
 import CardInstrument from './ctn-card-instruments.js';
+import CardInfo from './ctn-card-info.js';
 import imgLogo from '../img/chordette.png';
 import { ReactComponent as Wave } from '../svg/wave.svg';
 import '../css/homepage.css';
@@ -39,6 +40,11 @@ function Home() {
             </section>
             <section className = "ctn-layout-3">
                 <Wave className = "wave2" /> 
+                <div className = "card-info-service">
+                    <CardInfo title="Fiable" info="Notre politique de mise en vente impose aux vendeurs de publier une vidéo démontrant la qualité de leurs intruments."/>
+                    <CardInfo title="Fiable" info="Notre politique de mise en vente impose aux vendeurs de publier une vidéo démontrant la qualité de leurs intruments."/>
+                    <CardInfo title="Fiable" info="Notre politique de mise en vente impose aux vendeurs de publier une vidéo démontrant la qualité de leurs intruments."/>
+                </div>        
             </section>
         </main>
         

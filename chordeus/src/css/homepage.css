@@ -118,9 +118,11 @@ h1{
 /* -- SECTION 3 -- */
 
 .ctn-layout-3{
-    position: relative;
     background-color: #1F49AF;
+    position: relative;
     height: 100vh;
+    display: flex;
+    justify-content: space-around;
 }
 
 .wave2{
@@ -131,6 +133,12 @@ h1{
     transform: rotate(180deg);
 }
 
+.card-info-service{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 

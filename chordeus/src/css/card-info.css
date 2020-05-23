@@ -1,0 +1,36 @@
+.ctn-card-info{
+    width: 280px;
+    height: 280px;
+    padding: 30px;
+    background-color: #3B6EF8;
+    border-radius: 8px;
+}
+
+.ctn-card-inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-card-info{
+    font-weight: 700;
+    font-size: 2em;
+    color: white;
+}
+
+.para-card-info{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: white;
+}
+
+.more{
+    margin-top: 30px;
+    background-color: white;
+    color: #3B6EF8;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.more > .icon {
+    margin-left: 5px;
+}
