@@ -121,7 +121,7 @@ h1{
     background-color: #1F49AF;
     position: relative;
     z-index: 1000;
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     justify-content: space-around;
 }

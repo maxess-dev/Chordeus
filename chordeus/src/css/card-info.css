@@ -19,7 +19,7 @@
 }
 
 .para-card-info{
-    font-size: 1.05em;
+    font-size: 1.1em;
     line-height: 1.5em;
     color: white;
 }
@@ -43,4 +43,9 @@
     position: absolute;
     bottom: 120px;
     width: 300px;
+}
+
+.icon-title{
+    margin-left: 10px;
+    font-size: 0.8em;
 }
