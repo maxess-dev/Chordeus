@@ -123,7 +123,8 @@ h1{
     z-index: 1000;
     min-height: 120vh;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .wave2{
@@ -135,7 +136,31 @@ h1{
 }
 
 .card-info-service{
+    margin-top: 380px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+}
+
+footer{
+    display: flex;    
+    margin-top: 130px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-title-light{
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-title-bold{
+    font-weight: 700;
+}
+
+.no-margin{
+    margin-top: 0px;
 }
