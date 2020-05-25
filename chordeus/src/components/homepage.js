@@ -4,6 +4,9 @@ import CardInstrument from './ctn-card-instruments.js';
 import CardInfo from './ctn-card-info.js';
 import imgLogo from '../img/chordette.png';
 import { ReactComponent as Wave } from '../svg/wave.svg';
+import { faTree } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import guitar from '../img/guitar.png';
 import drums from '../img/drums.png';
 import synth from '../img/synth.png';
@@ -46,9 +49,9 @@ function Home() {
             <section className = "ctn-layout-3">
                 <Wave className = "wave2" /> 
                 <div className = "card-info-service">
-                    <CardInfo widthInstrument="300px" instrument={guitar} title="Fiable" info="Notre politique de mise en vente impose aux vendeurs de publier une vidéo démontrant la qualité de leurs intruments." bgColor="#3B6EF8" color="#4267CC" marginTop="35px" marginLeft ="50px"/>
-                    <CardInfo widthInstrument="200px" instrument={drums} title="Eco-Friendly" info="L’achat d’un produit d'occasion permet de réduire les pollutions liées à la création de nouveaux instruments." bgColor="#5CD856" color ="#56BF59" marginTop ="35px" marginLeft ="50px" bottomInstrument ="-100px"/>
-                    <CardInfo widthInstrument="350px" instrument={synth} title="Abordable" info="En tant qu’étudiant, nous nous engageons à rendre abordable au plus grand nombre la musique, grâce à des instruments qui s’accordent à votre budget." bgColor="#E66060" color="#E97B7B" marginLeft ="50px" bottomInstrument ="230px" rightInstrument = "20px"/>
+                    <CardInfo icon={faHandshake} widthInstrument="300px" instrument={guitar} title="Fiable" info="Notre politique de mise en vente impose aux vendeurs de publier une vidéo démontrant la qualité de leurs intruments." bgColor="#3B6EF8" color="#4267CC" marginTop="35px" marginLeft ="50px"/>
+                    <CardInfo icon={faTree} widthInstrument="200px" instrument={drums} title="Eco-Friendly" info="L’achat d’un produit d'occasion permet de réduire les pollutions liées à la création de nouveaux instruments." bgColor="#5CD856" color ="#56BF59" marginTop ="35px" marginLeft ="50px" bottomInstrument ="-100px"/>
+                    <CardInfo icon={faSmile} widthInstrument="350px" instrument={synth} title="Abordable" info="En tant qu’étudiant, nous nous engageons à rendre abordable au plus grand nombre la musique, grâce à des instruments qui s’accordent à votre budget." bgColor="#E66060" color="#E97B7B" marginLeft ="50px" bottomInstrument ="230px" rightInstrument = "20px"/>
                 </div>        
             </section>
         </main>
