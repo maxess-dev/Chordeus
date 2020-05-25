@@ -8,7 +8,8 @@ import synth from '../img/synth.png';
 
 function CardInfo(props){
     const ctnCard = {
-        backgroundColor: props.bgColor
+        backgroundColor: props.bgColor,
+        marginLeft: props.marginLeft
     }
 
     const buttonMargin = {
