@@ -1,6 +1,25 @@
-#landing-ctn-1{
-  background-color: #1F49AF;
-  height: 100vh;
+a{
+  text-decoration: none;
+  color: #1F49AF;
+}
+
+.relative-input{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.relative-input > input{
+  padding-left: 50px !important;
+  outline: none;
+  width: 400px !important;
+  color: #1F49AF;
+  height: 68% !important;
+  background-color: #f1f1f1 !important;
+  font-size: 1.1em !important;
+  font-weight: bold !important;
 }
 
 .ctn-navbar{
@@ -8,85 +27,82 @@
   z-index: 2000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 75px;
   width: 100%;
   background-color: #fff;
 }
 
-.ctn-logo-nav{
-  width: 20%;
-  height: 100%;
+.ctn-home{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  margin-left: 50px;
 }
 
-.name{
-  color:#1F49AF;
-  font-size: 1.3em;
-}
-
-.light-name{
-  font-weight: 500;
-}
-
-.burger-nav{
-  cursor: pointer;
+.ctn-burger-menu{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 35px;
+  align-items: center;
+  width: 35px;
+  height: 100%;
+  cursor: pointer;
 }
 
 .line{
+  width: 100%;
+  height: 3px;
   background-color: #1F49AF;
-  width: 30px;
-  height: 2px;
-  display: inline-block;
 }
 
-.line-2{
-  margin-top: 7px;
+.line:nth-child(2){
+  margin-top: 6px;
+  width: 100%;
 }
 
-.line-3{
-  margin-top: 7px;
+.line:nth-child(3){
+  margin-top: 6px;
 }
 
-.ctn-search-nav{
+.ctn-logo{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 100%;
+  margin-left: 30px;
+  color: #1F49AF;
 }
 
-.ctn-info-nav{
+.ctn-logo h3{
+  font-size: 1.3em;
+}
+
+.ctn-logo h3 > span{
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+.ctn-searchbar{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 30%;
-  font-size: 0.85em;
+  margin-right: 10px;
 }
 
-.ctn-info-nav > button {
-  border-radius: 4px;
-  padding: 12px;
-  margin-left: 20px;
+.ctn-searchbar > button{
+  background-color: #1F49AF;
 }
 
-.little1{
-  width: 100px;
-}
-
-.little2{
-  width: 250px;
-  margin-right: 50px;
+.searchIcon{
+  position: absolute;
+  left: 20px;
+  pointer-events: none;
+  color: #797979;
 }
 
 .chevron{
   position: relative;
+  left: 10px;
   top: 1px;
-  margin-left: 10px;
 }

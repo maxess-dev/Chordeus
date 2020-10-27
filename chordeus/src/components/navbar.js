@@ -1,27 +1,29 @@
 import React from 'react';
 import '../css/navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar(){
     return (
         <nav className = "ctn-navbar">
-            <div className = "ctn-logo-nav">
-                <div className = "burger-nav">
-                    <span className = "line-1 line"></span>
-                    <span className = "line-2 line"></span>
-                    <span className = "line-3 line"></span>
+            <div className = "ctn-home">
+                <div className = "ctn-burger-menu">
+                    <span className = "line"></span>
+                    <span className = "line"></span>
+                    <span className = "line"></span>
                 </div>
-                <h3 className = "name"><span className = "light-name">Chor</span>deus</h3>
+                <div className = "ctn-logo">
+                    <a href="#"><h3><span>Chor</span>deus</h3></a>
+                </div>
             </div>
-            <div className = "ctn-search-nav">
-                <button>Instrument<FontAwesomeIcon icon={faChevronDown} className="chevron" /></button>
-                <input type = "text" placeholder = "Rechercher votre instrument ..." />
+            <div className = "ctn-searchbar">
+                <button>Instrument<FontAwesomeIcon icon={faChevronDown} className="chevron"/></button>
+                <div className = "relative-input">
+                    <input type="text"></input>
+                    <FontAwesomeIcon icon={faSearch} className="searchIcon"/>
+                </div>
             </div>
-            <div className = "ctn-info-nav">
-                <button className = "little1">Tarifs</button>
-                <button className = "little2">Se connecter | S'inscrire</button>   
-            </div>
+                {/*<button>Instrument</button>*/}
         </nav>
     );
 }
