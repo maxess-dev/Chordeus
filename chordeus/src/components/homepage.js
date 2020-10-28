@@ -57,7 +57,7 @@ function Home() {
                     <h3 className ="footer-title-light">Chercher <span className="footer-title-bold"> votre </span>instrument dès <span className="footer-title-bold">maintenant !</span></h3>
                     <div className ="cta-register no-margin">
                         <button>Acheter</button>
-                        <button>Vender</button>
+                        <button>Vendre</button>
                     </div>
                 </footer>
             </section>

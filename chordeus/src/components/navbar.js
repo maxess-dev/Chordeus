@@ -17,7 +17,17 @@ function Navbar(){
                 </div>
             </div>
             <div className = "ctn-searchbar">
-                <button>Instrument<FontAwesomeIcon icon={faChevronDown} className="chevron"/></button>
+                <div className = "ctn-button-dropdown">
+                    <button>Instrument<FontAwesomeIcon icon={faChevronDown} className="chevron"/></button>
+                    <div className = "dropdown-menu-instrument">
+                        <ul>
+                            <li>Piano 🎹</li>
+                            <li>Guitare 🎸</li>
+                            <li>Batterie 🥁</li>
+                            <li>Saxophone 🎷</li>
+                        </ul>
+                    </div>
+                </div>
                 <div className = "relative-input">
                     <input type="text"></input>
                     <FontAwesomeIcon icon={faSearch} className="searchIcon"/>
