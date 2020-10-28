@@ -111,15 +111,21 @@ a{
 }
 
 .ctn-button-dropdown button{
-  background-color: black;
+  background-color: #1F49AF;
   position: relative;
   z-index: 2000;
+  width: 180px;
 }
 
 .dropdown-menu-instrument{
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.activeDropdown{
+  display: block;
 }
 
 .dropdown-menu-instrument ul{
@@ -129,14 +135,14 @@ a{
 }
 
 .dropdown-menu-instrument ul li{
-  background-color: white;
+  background-color: #f1f1f1 ;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center;
-  color: black;
+  padding-left: 20px;
+  color: #1d1d1d;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.95em;
   cursor: pointer;
 }
 
@@ -165,5 +171,45 @@ a{
   border-radius: 0px 0px 4px 4px;
   border: none;
 }
+
+.ctn-social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.facebook,.instagram,.twitter,.tiktok{
+  font-size: 1.4em;
+  color: #1F49AF;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.facebook:hover,.instagram:hover,.twitter:hover,.tiktok:hover{
+  color: rgb(59, 110, 248)
+}
+
+.activePiano{
+  background-color: #1d1d1d !important;
+}
+
+.activeGuitare{
+  background-color: rgb(230, 96, 96) !important;
+}
+
+.activeBatterie{
+  background-color: rgb(92, 216, 86) !important;
+}
+
+.activeSaxophone{
+  background-color: rgb(59, 110, 248) !important;
+}
+
+
+
+
 
 

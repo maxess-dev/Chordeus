@@ -20,8 +20,8 @@ function Home() {
             <Navbar />
             <section className = "ctn-layout-1">
                 <div className = "cta-landing">
-                    <h1>Lancez-vous <br/> dans la musique !</h1>
-                    <h3>Acheter, vendre vos instruments d'occasions <br/> en quelques clics !</h3>
+                    <h1>Lance-toi <br/> dans la musique !</h1>
+                    <h3>Acheter, vendre vos instruments d'occasion<br/> en quelques clics !</h3>
                     <div className = "cta-register">
                         <button>Acheter</button>
                         <button>Vendre</button>
@@ -54,7 +54,7 @@ function Home() {
                     <CardInfo icon={faSmile} widthInstrument="350px" instrument={synth} title="Abordable" info="En tant qu’étudiant, nous nous engageons à rendre abordable au plus grand nombre la musique, grâce à des instruments qui s’accordent à votre budget." bgColor="#E66060" color="#E97B7B" marginLeft ="50px" bottomInstrument ="230px" rightInstrument = "20px"/>
                 </div>      
                 <footer>
-                    <h3 className ="footer-title-light">Chercher <span className="footer-title-bold"> votre </span>instrument dès <span className="footer-title-bold">maintenant !</span></h3>
+                    <h3 className ="footer-title-light">Cherche <span className="footer-title-bold">ton </span>instrument dès <span className="footer-title-bold">maintenant !</span></h3>
                     <div className ="cta-register no-margin">
                         <button>Acheter</button>
                         <button>Vendre</button>
