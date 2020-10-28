@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronUp, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faTiktok, faInstagram } from '@fortawesome/free-brands-svg-icons'
 export default class Navbar extends React.Component {
 
@@ -9,8 +9,16 @@ export default class Navbar extends React.Component {
         super(props)
         this.state = {
             isDropdownOn : false,
-            textInstrument : "Instrument"
+            textInstrument : "Instrument",
+            isBtnDisplay : false
         }
+
+        this.displaySearchInstrumentBtn = this.displaySearchInstrumentBtn.bind(this)
+    }
+
+    displaySearchInstrumentBtn(e){   
+        let inputValue = e.target.value;
+        inputValue.length > 0 ? this.setState({isBtnDisplay: true}) : this.setState({isBtnDisplay: false});
     }
 
     render(){
@@ -26,10 +34,10 @@ export default class Navbar extends React.Component {
                     <a href="index.html"><h3><span>Chor</span>deus</h3></a>
                 </div>
                 <div className = "ctn-social-media">
-                    <a href="https://www.facebook.com/" target="_blank"><FontAwesomeIcon icon={faFacebook} className="facebook" alt="Facebook Page"/></a>
-                    <a href="https://www.instagram.com/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="instagram" alt="Instagram Page"/></a>
-                    <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={faTwitter} className="twitter" alt="Twitter Page"/></a>
-                    <a href="https://www.tiktok.com/fr/" target="_blank"><FontAwesomeIcon icon={faTiktok} className="tiktok" alt="TikTok Page"/></a>
+                    <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faFacebook} className="facebook" alt="Facebook Page"/></a>
+                    <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} className="instagram" alt="Instagram Page"/></a>
+                    <a href="https://twitter.com/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faTwitter} className="twitter" alt="Twitter Page"/></a>
+                    <a href="https://www.tiktok.com/fr/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faTiktok} className="tiktok" alt="TikTok Page"/></a>
                 </div>
             </div>
             <div className = "ctn-searchbar">
@@ -41,23 +49,32 @@ export default class Navbar extends React.Component {
                         <ul>
                             <li onClick = {() => {
                                 this.setState({isDropdownOn:!this.state.isDropdownOn,textInstrument: "Piano"})
-                            }}
-                            >Piano 🎹</li>
+                                this.input.focus()
+                            }}>Piano 🎹</li>
                             <li onClick = {() => {
                                 this.setState({isDropdownOn:!this.state.isDropdownOn,textInstrument: "Guitare"})
+                                this.input.focus()
                             }}>Guitare 🎸</li>
                             <li onClick = {() => {
                                 this.setState({isDropdownOn:!this.state.isDropdownOn, textInstrument: "Batterie"})
+                                this.input.focus()
                             }}>Batterie 🥁</li>
                             <li onClick = {() => {
                                 this.setState({isDropdownOn:!this.state.isDropdownOn, textInstrument:"Saxophone"})
+                                this.input.focus()
                             }
                             }>Saxophone 🎷</li>
                         </ul>
                     </div>
                 </div>
                 <div className = "relative-input">
-                    <input type="text"></input>
+                    <input type="text" ref={(el) => this.input = el} onKeyUp={this.displaySearchInstrumentBtn}></input>
+                    <button type="submit" onClick={()=>{
+                        this.input.value = ""
+                        this.input.focus()
+                    }} value="" className={this.state.isBtnDisplay ? "searchInstrument activeBtnInstrument" : "searchInstrument" }>
+                        <FontAwesomeIcon icon={faTimes} className=""/>
+                    </button>
                     <FontAwesomeIcon icon={faSearch} className="searchIcon"/>
                 </div>
             </div>
@@ -65,3 +82,4 @@ export default class Navbar extends React.Component {
         )
     }
 }
+

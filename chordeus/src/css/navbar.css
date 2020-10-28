@@ -1,3 +1,14 @@
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 a{
   text-decoration: none;
   color: #1F49AF;
@@ -19,6 +30,28 @@ a{
   height: 68% !important;
   background-color: #f1f1f1 !important;
   font-size: 1.1em !important;
+}
+
+.searchInstrument{
+  background-color: rgb(128, 128, 128);
+  animation: fadeIn 1s ease;
+  position: absolute;
+  right: 0;
+  display: none;
+  height: 68%;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 0px 4px 4px 0px !important;
+  transition: background-color 0.2s ease;
+}
+
+.searchInstrument:hover{
+  transition: background-color 0.2s ease;
+  background-color: rgb(235, 71, 71)
+}
+
+.activeBtnInstrument{
+  display: block;
 }
 
 .ctn-navbar{
