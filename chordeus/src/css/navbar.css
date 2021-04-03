@@ -50,6 +50,12 @@ a{
   background-color: rgb(235, 71, 71)
 }
 
+.searchInstrument:focus{
+  outline: none;
+  transition: none;
+  background-color: rgb(169, 47, 47)
+}
+
 .activeBtnInstrument{
   display: block;
 }

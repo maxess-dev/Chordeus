@@ -57,10 +57,7 @@ h1{
 
 .ctn-img{
     margin-right: 150px;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 500px;
 }
 
 .wave{

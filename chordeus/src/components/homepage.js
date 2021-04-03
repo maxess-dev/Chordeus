@@ -11,7 +11,9 @@ import guitar from '../img/guitar.png';
 import drums from '../img/drums.png';
 import synth from '../img/synth.png';
 import '../css/homepage.css';
-import HeroGirl from '../svg/herogirl.svg';
+import { Keyshape } from 'react-keyshape';
+import herogirl from '../svg/herogirl.svg';
+
 
 
 function Home() {
@@ -28,7 +30,7 @@ function Home() {
                     </div>
                 </div>
                 <div className = "ctn-img">
-                    <img src={ imgLogo } alt="Girl with instruments"/>
+                    <Keyshape svg={herogirl} className="herogirl-svg" />
                 </div>
                 <Wave className = "wave" />  
             </section>

@@ -69,10 +69,10 @@ export default class Navbar extends React.Component {
                 </div>
                 <div className = "relative-input">
                     <input type="text" ref={(el) => this.input = el} onKeyUp={this.displaySearchInstrumentBtn}></input>
-                    <button type="submit" onClick={()=>{
+                    <button onClick={()=>{
                         this.input.value = ""
                         this.input.focus()
-                    }} value="" className={this.state.isBtnDisplay ? "searchInstrument activeBtnInstrument" : "searchInstrument" }>
+                    }} className={this.state.isBtnDisplay ? "searchInstrument activeBtnInstrument" : "searchInstrument" }>
                         <FontAwesomeIcon icon={faTimes} className=""/>
                     </button>
                     <FontAwesomeIcon icon={faSearch} className="searchIcon"/>
