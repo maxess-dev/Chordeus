@@ -5,7 +5,7 @@ import { faChevronDown, faChevronUp, faSearch, faTimes } from '@fortawesome/free
 import { faFacebook, faTwitter, faTiktok, faInstagram } from '@fortawesome/free-brands-svg-icons'
 export default class Navbar extends React.Component {
 
-    constructor(props,state){
+    constructor(props){
         super(props)
         this.state = {
             isDropdownOn : false,

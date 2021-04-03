@@ -11,7 +11,7 @@ import guitar from '../img/guitar.png';
 import drums from '../img/drums.png';
 import synth from '../img/synth.png';
 import '../css/homepage.css';
-
+import HeroGirl from '../svg/herogirl.svg';
 
 
 function Home() {
